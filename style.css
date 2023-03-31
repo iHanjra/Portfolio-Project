@@ -1,0 +1,122 @@
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #000;
+	color:#fff;
+}
+.banner {
+	background: url('img/wallpaper.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.art {
+	width: 256px;
+	box-shadow: 0 0 20px #000;
+	margin: 75px 0 0;
+	translate: 0 40px;
+}
+.banner div {
+	background-color: rgba(255 255 255 / 0.5);
+	backdrop-filter: blur(50px);
+}
+body {
+	width: 1280px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-areas:
+	'sidebar profile profile';
+}
+#header {
+	padding: 20px;
+}
+#sidebar {
+	grid-area: sidebar;
+	padding: 20px;
+	width: 200px;
+}
+#game-profile {
+	grid-area: profile;
+}
+#game-profile h2 {
+	margin: 0 0 0 280px;
+	font-size: 2em;
+	padding: 0;
+}
+#game-profile article {
+	margin-top: 20px;
+}
+.tag-cloud {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+}
+.tag-cloud li {
+	float: left;
+	padding: 10px;
+	background-color: #888;
+	color: #fff;
+	border-radius: 15px;
+	margin: 10px 10px 10px 0;
+}
+.carousel {	
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 20px 10px;
+	position: relative;
+}
+.carousel section {
+	height: 200px;
+	padding: 0 50px;
+	width: calc(100% - 50px)
+}
+.carousel a {
+	position: absolute;
+	font-size: 2em;
+	display: block;
+	height: 100%;
+	padding: 75px 10px;
+	width: 35px;
+}
+.carousel .left {
+	left:0;
+}
+.carousel .right {
+	right:0;
+}
+.carousel section img {
+	height: 200px;
+}
+#game-list {
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#game-list li {
+	width:200px;
+	height:200px;
+	background:radial-gradient(circle, rgba(101,101,101,1) 0%, rgba(85,85,85,1) 100%);
+	position: relative;
+	transition: scale 100ms;
+}
+#game-list li:hover {
+	scale:1.1;
+	z-index: 99;
+}
+#game-list h2 {
+	position: absolute;
+	bottom: 0;
+	font-size: 1em;
+	color: #fff;
+	background-color: rgba(0 0 0 / 0.5);
+	width: 100%;
+	margin: 0;
+	height: 3rem;
+	padding: 5px;
+	box-sizing: border-box;
+	backdrop-filter: blur(1px);
+}
+#game-list img {
+	width: 200px;
+	z-index: -10;
+	display: block;
+}
