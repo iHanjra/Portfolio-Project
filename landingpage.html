@@ -5,24 +5,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="shortcut icon" type="image/png" href="images/icons8-xbox-32.png"/>
 		<link href="style.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 		<script src="app.js" type="module" defer></script>
 	</head>
 	<body>
 		<section id="sidebar">
-			<h2>Favorites</h2>
-			<ul>
-				<li>Game 1</li>
-				<li>Game 2</li>
-			</ul>
-		</section>
-		<section>
-			<form id="header">
-				<input name="title" type="text" placeholder="Search title"/>
-				<select id="genres" name="genre"></select>
-				<select id="features" name="features"></select>
+            <form id="button">
+				<button type="submit" placeholder>Random game</button>
 			</form>
-			<ul id="game-list"></ul>
+            <select id="genres" name="genre">
+            <option value="" selected>Choose a genre</option>
+            </select>
+			<select id="features" name="features">
+                <option value="" selected>Choose a feature</option>
+            </select>
 		</section>
+		<main>
+			<ul id="game-list"></ul>
+        </main>
 	</body>
 </html>
