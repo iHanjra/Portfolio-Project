@@ -12,7 +12,7 @@ The dropdown filters games by genre on the main page and the random game button 
 
 2. Navigate to the cloned repository's directory on your command line. Then, run the following command:
 
-3. Open up the repository in VSCode. Follow the instructions below to complete the Lab.
+3. Open up the repository in VSCode.
 
 4. Have fun.
 
