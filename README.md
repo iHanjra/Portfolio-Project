@@ -10,7 +10,7 @@ The dropdown filters games by genre on the main page and the random game button 
 
 1. Fork and clone this repository.
 
-2. Navigate to the cloned repository's directory on your command line. Then, run the following command:
+2. Navigate to the cloned repository's directory on your command line.
 
 3. Open up the repository in VSCode.
 
