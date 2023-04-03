@@ -1,8 +1,17 @@
 import { getDataHeader } from "./api.js";
+import { ids } from "./ids.js";
 
 //Get part of the url that's after question mark
 const params = new URLSearchParams(window.location.search);
 const game = await getDataHeader(params.get("id"), true);
+
+//Random game button
+const randomGame = document.getElementById("button");
+randomGame.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const index = Math.floor(Math.random() * ids.length);
+  window.location.href = `./gamepage.html?id=${ids[index]}`;
+});
 
 const h2 = document.querySelector("h2");
 h2.textContent = game.title;
