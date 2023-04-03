@@ -1,7 +1,7 @@
 import { getDataHeader } from "./api.js";
 import { ids } from "./ids.js";
 
-//Get part of the url that's after question mark
+//Get the part of the url that's after question mark
 const params = new URLSearchParams(window.location.search);
 const game = await getDataHeader(params.get("id"), true);
 
