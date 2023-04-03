@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xbox Game Pass</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/icons8-xbox-32.png"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="list.js" type="module" defer></script>
+    <style id="filter"></style>
+  </head>
+  <body>
+    <section id="sidebar">
+      <form id="button">
+        <button type="submit" placeholder>Random game</button>
+      </form>
+      <select id="genres" name="genre">
+        <option value="" selected>Choose a genre</option>
+      </select>
+    </section>
+    <main>
+      <h1>Xbox Game Pass Titles</h1>
+      <ul id="game-list"></ul>
+    </main>
+    <button id="topBtn">&#8593;</button>
+  </body>
+</html>

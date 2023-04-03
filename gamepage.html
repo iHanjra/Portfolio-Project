@@ -4,40 +4,40 @@
 		<meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Game</title>
+		<link rel="shortcut icon" type="image/png" href="images/icons8-xbox-32.png"/>
 		<link href="style.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-		<script src="app.js" type="module" defer></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<script src="profile.js" type="module" defer></script>
 	</head>
 	<body>
-		<form id="header">
-		</form>
 		<section id="sidebar">
-		</section>
-		<section id="game-profile">
 			<div>
+				<p id="developer"></p>
+				<p id="publisher"></p>
+				<p id="genre"></p>
+				<p id="release-date"></p>
+			</div>
+		</section>
+		<main>
+		<h1><a href="./">Xbox Game Pass Titles</a></h1>
+			<section id="game-profile">
+				<div>
 				<div class="banner">
 				</div>
 				<div>
-					<h2></h2>
 					<div class="carousel">
-						<a class="left">◀</a>
-						<a class="right">▶</a>
-						<section>
-							<img src="./img/screenshot1.jpg"/><img src="./img/screenshot2.jpg"/><img src="./img/screenshot3.jpg"/><img src="./img/screenshot4.jpg"/>
+						<section id="screenshots">
 						</section>
 					</div>
+					<h2></h2>
 					<article></article>
-					<div>
-						<p id="developer"></p>
-						<p id="publisher"></p>
-						<p id="genre"></p>
-						<p id="release-date"></p>
-					</div>
 					<ul class="tag-cloud"></ul>
-				</div>
-			</div>
 		</section>
+	</main>
+	<button id="topBtn">&#8593;</button>
 	</body>
 </html>
