@@ -1,6 +1,6 @@
 # Portfolio-Project
 
-This is a website that displays all the currently available titles on the Xbox Game Pass service.
+This is a website that displays all of the currently available titles on the Xbox Game Pass service.
 
 It allows the user to see a list of all the games on page load and click through to see information and screenshots for a specific title.
 
